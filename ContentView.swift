@@ -17,7 +17,7 @@ extension Image {
 }
 
 struct ContentView: View {
-    private let imageURL: String = "https://i0.shbdn.com/photos/46/06/99/x5_933460699n6i.jpg"
+    private let imageURL: String = "https://cdn.freelogovectors.net/wp-content/uploads/2018/03/nike-logo.png"
     var body: some View {
         if #available(iOS 15.0, *) {
             // MARK: - 1. BASIC
