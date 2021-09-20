@@ -17,7 +17,7 @@ extension Image {
 }
 
 struct ContentView: View {
-    private let imageURL2: String = "https://i0.shbdn.com/photos/46/06/99/x5_933460699n6i.jpg"
+    private let imageURL: String = "https://i0.shbdn.com/photos/46/06/99/x5_933460699n6i.jpg"
     var body: some View {
         if #available(iOS 15.0, *) {
             // MARK: - 1. BASIC
@@ -55,7 +55,7 @@ struct ContentView: View {
             }.padding(40)
           
             // MARK: - 5. ANIMATION
-            AsyncImage(url: URL(string: imageURL2), transaction: Transaction(animation: .spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0.25))) { phase in
+            AsyncImage(url: URL(string: imageURL), transaction: Transaction(animation: .spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0.25))) { phase in
                 switch phase {
                 case .success(let image):
                     image.imageModifier()
